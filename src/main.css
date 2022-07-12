@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&family=Patrick+Hand&display=swap');
+
+/* SET VARIABLE COlORS */
+
+:root {
+    --bg-color-l: #fff;
+    --color-l: #000;
+    --primary-color-l: #058A00;
+    --secondary-color-l: #ce0000;
+    --bg-color-d: #141414;
+    --bg-color-d: #171717;
+    --color-d: #fff;
+    --primary-color-d: #00ff59;
+    --secondary-color-d: #FF0505;
+    --gray-color-l: #3D3D3D;
+    --gray-color-d: #BCBCBC;
+}
+
+/* BODY STYLING */
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+}
