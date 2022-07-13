@@ -37,7 +37,7 @@ body.dark {
 
 /* HEADER STYLING */
 
-header {
+.header {
   background-image: url(../images/programming.jpg);
   background-color: rgba(0, 0, 0, 0.308);
   background-blend-mode: darken, luminosity;
@@ -326,6 +326,30 @@ main {
 
 body.dark main {
   border-bottom: 3px solid var(--secondary-color-d);
+}
+
+/* HYPERLINK IN THANKS PAGE */
+
+.anchor {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+
+.anchor a {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.anchor a:hover {
+  color: var(--bg-color-l);
+}
+
+body.dark .anchor a:hover {
+  color: var(--bg-color-d);
 }
 
 /* h2 */
