@@ -364,10 +364,17 @@
 
         <form
           class="d-flex flex-column gap-3 justify-content-center align-items-center"
-          action="https://formsubmit.co/847f614be8a0bb987249c6777fdfac0f"
+          action="https://formsubmit.io/send/531ac240-27c8-4f73-ab4d-bfa175550d72"
           method="POST"
         >
           <fieldset>
+            <input
+              name="_redirect"
+              type="hidden"
+              id="name"
+              value="https://kaipi01.github.io/public/pages/thanks.html"
+            />
+
             <label class="mt-1 p-2 fs-4" for="emial">Twój e-mail</label>
             <input
               type="email"
@@ -385,6 +392,7 @@
               rows="10"
               placeholder=" Wpisz wiadomość..."
             ></textarea>
+            <input name="_formsubmit_id" type="text" style="display: none" />
           </fieldset>
 
           <button class="button submit-btn my-3" type="submit">Wyślij</button>
