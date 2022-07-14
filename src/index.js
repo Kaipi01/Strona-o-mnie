@@ -21,11 +21,11 @@ window.addEventListener('scroll', displayShadow);
 //function that shows the green shadow in dark mode
 function displayShadow() {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY >= 450) {
+    if (window.scrollY >= 350) {
         navbar.classList.remove('disableShadow');
         navbar.classList.add('activeShadow');
     }
-    if (window.scrollY < 450) {
+    if (window.scrollY < 350) {
         navbar.classList.remove('activeShadow');
         navbar.classList.add('disableShadow');
     }
