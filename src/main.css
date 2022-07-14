@@ -21,7 +21,7 @@ body {
   background-color: var(--bg-color-l);
   color: var(--color-l);
   font-family: "Lato", sans-serif;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 body.dark {
@@ -44,12 +44,12 @@ body.dark {
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
-  margin-top: 90px;
+  margin-top: 75px;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 55px;
+  font-size: 50px;
   letter-spacing: 5px;
   text-transform: uppercase;
   text-shadow: 3px 3px 0 var(--primary-color-l),
@@ -61,7 +61,7 @@ h1 {
 
 @media only screen and (min-width: 1100px) {
   h1 {
-    font-size: 90px;
+    font-size: 85px;
   }
 }
 
@@ -95,7 +95,7 @@ body.dark h1 span {
 .navbar {
   background-color: var(--bg-color-l);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  height: 90px;
+  height: 75px;
   top: 0;
   z-index: 1;
 }
@@ -124,6 +124,12 @@ body.dark .disableShadow {
 
 body.dark .navbar-collapse {
   background-color: var(--bg-color-d);
+}
+
+@media only screen and (min-width: 991px) {
+  .navbar-collapse {
+    margin-top: -3px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -164,7 +170,7 @@ body.dark .navbar-toggler span {
 
 .navbar-brand {
   color: var(--primary-color-l);
-  font-size: 23px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -189,7 +195,7 @@ body.dark .navbar-brand:hover {
 /* navbar logo */
 
 .navbar-logo {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
 }
 
@@ -231,7 +237,7 @@ body.dark .nav-item:focus {
   border: none;
   border-radius: 10px;
   color: var(--bg-color-l);
-  font-size: 23px;
+  /* font-size: 20px; */
   padding: 10px 30px;
   transition: all 0.3s ease-in-out;
 }
@@ -252,8 +258,8 @@ body.dark .button:focus {
 }
 
 .submit-btn {
-  font-size: 26px;
-  padding: 20px 70px;
+  font-size: 21px;
+  padding: 17px 65px;
 }
 
 /* THEME BUTTON STYLING */
@@ -264,12 +270,12 @@ body.dark .button:focus {
   border: 3px solid;
   cursor: pointer;
   display: block;
-  height: 40px;
+  height: 35px;
   justify-self: flex-end;
   margin: 0 auto;
   position: relative;
   transition: all 0.3s ease-in-out;
-  width: 85px;
+  width: 75px;
 }
 
 body.light .theme-btn {
@@ -285,12 +291,12 @@ body.dark .theme-btn {
   border-radius: 50%;
   content: "";
   display: block;
-  height: 27px;
+  height: 22px;
   position: absolute;
   transition: all 0.5s ease-in-out;
   top: 4px;
-  transform: translateX(6px);
-  width: 27px;
+  transform: translateX(3px);
+  width: 22px;
 }
 
 body.dark .theme-btn::after {
@@ -298,24 +304,24 @@ body.dark .theme-btn::after {
   border-radius: 50%;
   content: "";
   display: block;
-  height: 27px;
+  height: 22px;
   position: absolute;
   transition: all 0.5s ease-in-out;
   top: 4px;
-  transform: translateX(40px);
-  width: 27px;
+  transform: translateX(33px);
+  width: 22px;
 }
 
 body.dark .theme-btn::before {
   border-radius: 50%;
   content: "";
   display: block;
-  height: 27px;
+  height: 22px;
   position: absolute;
   transition: all 1s ease-in-out;
   top: 1px;
-  transform: translateX(33px);
-  width: 27px;
+  /* transform: translateX(10px); */
+  width: 22px;
 }
 
 /* MAIN */
@@ -374,7 +380,7 @@ h3 {
 .my-image {
   border: 4px solid var(--secondary-color-l);
   border-radius: 50%;
-  width: 330px;
+  width: 300px;
 }
 
 body.dark .my-image {
@@ -383,10 +389,10 @@ body.dark .my-image {
 
 @media only screen and (min-width: 1200px) {
   .my-image {
-    min-width: 330px;
+    min-width: 300px;
   }
   .passion-img {
-    min-width: 450px;
+    min-width: 400px;
   }
 }
 
@@ -401,7 +407,7 @@ body.dark .my-image {
 
 blockquote {
   color: var(--gray-color-l);
-  font-size: 27px;
+  font-size: 21px;
   font-style: italic;
 }
 
@@ -413,11 +419,12 @@ body.dark blockquote {
 
 .cmd {
   background-color: #000;
-  border: 12px solid gray;
-  border-top-width: 65px;
+  border: 10px solid gray;
+  border-top-width: 45px;
   color: var(--primary-color-d);
-  max-width: 1200px;
-  min-height: 650px;
+  max-width: 1000px;
+  min-height: 600px;
+  padding-top: 15px;
   position: relative;
   text-align: justify;
 }
@@ -427,19 +434,19 @@ body.dark blockquote {
 .maximalize,
 .close {
   color: #000;
-  font-size: 17px;
+  font-size: 13px;
   position: absolute;
-  top: -50px;
+  top: -40px;
 }
 
 .cmd-icon {
   background-color: #000;
   color: #fff;
-  font-size: 23px;
+  font-size: 18px;
   left: 0;
   padding: 5px 0;
-  top: -55px;
-  width: 50px;
+  top: -45px;
+  width: 45px;
 }
 
 .minimalize {
@@ -455,21 +462,21 @@ body.dark blockquote {
   color: #fff;
   padding: 5px 0;
   right: 0px;
-  top: -55px;
-  width: 100px;
+  top: -45px;
+  width: 90px;
 }
 
 .cmd i {
   align-items: center;
   display: flex;
-  height: 30px;
+  height: 25px;
   justify-content: center;
 }
 
 .prompt {
   -webkit-animation: promptAnimation 0.6s alternate infinite;
   animation: promptAnimation 0.6s alternate infinite;
-  font-size: 35px;
+  font-size: 27px;
 }
 
 @-webkit-keyframes promptAnimation {
@@ -495,7 +502,7 @@ body.dark blockquote {
 .tech {
   border-color: var(--secondary-color-l) !important;
   min-width: 200px;
-  width: 550px;
+  width: 450px;
 }
 
 body.dark .tech {
@@ -503,7 +510,7 @@ body.dark .tech {
 }
 
 .img-tech {
-  height: 120px;
+  height: 90px;
 }
 
 /* CONTACT SECTION */
@@ -515,7 +522,7 @@ input {
   color: var(--color-l);
   border-radius: 15px;
   border-width: 4px;
-  max-width: 1100px;
+  max-width: 900px;
   padding: 20px;
   width: 100%;
 }
@@ -540,7 +547,7 @@ textarea {
 .icon {
   color: var(--color-l);
   cursor: pointer;
-  font-size: 35px;
+  font-size: 30px;
   transition: all 0.2s ease-in-out;
 }
 
