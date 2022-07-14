@@ -140,6 +140,11 @@ body.dark .navbar-collapse {
     box-shadow: var(--primary-color-d) 0px 3px 13px;
   }
 
+  .navbar {
+    padding-bottom: 45px;
+    padding-top: 0;
+  }
+
   .navbar-nav {
     padding: 20px 0;
   }
@@ -149,6 +154,11 @@ body.dark .navbar-collapse {
 
 .navbar-toggler {
   border: 3px solid var(--secondary-color-l);
+}
+
+.toggler {
+  gap: 7px;
+  padding: 5px 0;
 }
 
 .navbar-toggler:focus {
