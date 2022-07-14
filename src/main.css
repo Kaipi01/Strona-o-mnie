@@ -32,7 +32,7 @@ body.dark {
 /* MODIFICATION CONTAINER STYLING */
 
 .container {
-  max-width: 1600px;
+  max-width: 1350px;
 }
 
 /* HEADER STYLING */
@@ -470,6 +470,7 @@ body.dark blockquote {
 .close {
   background-color: red;
   color: #fff;
+  font-size: 19px;
   padding: 5px 0;
   right: 0px;
   top: -45px;
