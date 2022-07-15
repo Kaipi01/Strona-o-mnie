@@ -1,508 +1,364 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <title>Początkujący programista | Mateusz Filipiak</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Witam! Z tej strony Mateusz, początkujący programista stron internetowych. Zapraszam Cie na strone, która została poświęcona mojej osobie."
-    />
-    <meta
-      name="keywords"
-      content="mateusz, filipiak, programista, strona osobista, frontend"
-    />
-    <meta name="author" content="Mateusz Filipiak" />
-    <link
-      rel="shortcut icon"
-      href="../images/favicon.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="../src/bootstrap-5.2.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="../src/main.css" />
-    <link rel="stylesheet" href="../fontello/css/fontello.css" />
-    <script defer src="../src/index.js"></script>
-  </head>
 
-  <body class="body">
-    <header class="header">
-      <nav class="navbar navbar-expand-lg position-fixed w-100 px-4 px-lg-2">
-        <div class="container-fluid">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <span class="navbar-logo me-3">M<span>F</span></span>
-            <span class="brand-label">Mateusz Filipiak</span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <div class="d-flex flex-column toggler">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav d-flex align-items-center justify-content-end w-100"
-            >
-              <li class="nav-item p-2" tabindex="0" data-key="about-me">
-                O mnie
-              </li>
-              <li class="nav-item p-2" tabindex="0" data-key="passion">
-                Moja pasja
-              </li>
-              <li class="nav-item p-2" tabindex="0" data-key="skills">
-                Umiejętności
-              </li>
-              <li class="nav-item p-3">
-                <button data-key="contact" type="button" class="button">
-                  Kontakt
-                </button>
-              </li>
-              <li class="nav-item p-2">
-                <button class="theme-btn" role="switch">
-                  <span class="visually-hidden">Zmień motyw na stronie</span>
-                </button>
-              </li>
-            </ul>
+<head>
+  <title>Początkujący programista | Mateusz Filipiak</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Witam! Z tej strony Mateusz, początkujący programista stron internetowych. Zapraszam Cie na strone, która została poświęcona mojej osobie." />
+  <meta name="keywords" content="mateusz, filipiak, programista, strona osobista, frontend" />
+  <meta name="author" content="Mateusz Filipiak" />
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../src/bootstrap-5.2.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../src/main.css" />
+  <link rel="stylesheet" href="../fontello/css/fontello.css" />
+  <script defer src="../src/index.js"></script>
+</head>
+
+<body class="body">
+  <header class="header">
+    <nav class="navbar navbar-expand-lg position-fixed w-100 px-4 px-lg-2">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <span class="navbar-logo me-3">M<span>F</span></span>
+          <span class="brand-label">Mateusz Filipiak</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="d-flex flex-column toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex align-items-center justify-content-end w-100">
+            <li class="nav-item p-2" tabindex="0" data-key="about-me">
+              O mnie
+            </li>
+            <li class="nav-item p-2" tabindex="0" data-key="passion">
+              Moja pasja
+            </li>
+            <li class="nav-item p-2" tabindex="0" data-key="skills">
+              Umiejętności
+            </li>
+            <li class="nav-item p-3">
+              <button data-key="contact" type="button" class="button">
+                Kontakt
+              </button>
+            </li>
+            <li class="nav-item p-2">
+              <button class="theme-btn" role="switch">
+                <span class="visually-hidden">Zmień motyw na stronie</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container d-flex justify-content-center align-items-center flex-column h-100 text-white text-center">
+      <h1>Mateusz <span>Filipiak</span></h1>
+      <p class="fs-3 desciption">
+        Początkujący pasjonat aspirujący do zostania junior Front-end Developerem!
+      </p>
+    </div>
+  </header>
+
+  <main class="p-3 p-md-4 p-lg-5">
+    <section id="about-me">
+      <h2 class="text-center my-3 fs-2 text-uppercase">Kim jestem?</h2>
+      <article class="container d-xl-flex">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <img class="my-image img-fluid" src="../images/myphoto.jpg"
+            alt="Zamyślony ja, sam stojący w ogrodzie i patrzący w dal" />
+          <div class="d-flex justify-content-center">
+            <a href="https://github.com/Kaipi01" target="_blank"><i class="icon icon-github"></i></a>
+            <a href="https://www.facebook.com/mateusz.filipiak.9216" target="_blank"><i
+                class="icon icon-facebook"></i></a>
           </div>
         </div>
-      </nav>
-      <div
-        class="container d-flex justify-content-center align-items-center flex-column h-100 text-white text-center"
-      >
-        <h1>Mateusz <span>Filipiak</span></h1>
-        <p class="fs-3 desciption">
-          Początkujący pasjonat aspirujący do zostania junior Front-end developerem!
+        <p style="text-align: justify" class="ps-xl-5 text-md-start">
+          Witam, mam na imię Mateusz. Jestem z zawodu technikiem
+          teleinformatykiem, który sześć miesięcy temu rozpoczął swoją przygodę z
+          programowaniem. Dokładniej to uczę się tworzyć strony internetowe za
+          pomocą takich technologi jak <abbr title="HyperText Markup Language">HTML</abbr>, <abbr
+            title="Cascading Style Sheets">CSS</abbr> oraz JavaScript. Jestem
+          samoukiem. Całą wiedzę zdobywam za pomocą darmowych kursów z
+          internetu oraz książek. Pragnę w przyszłości pracować jako Front-end
+          developer. Póki co jeszcze długa droga przede mną, ale się nie
+          zniechęcam i systematycznie powiększam swoją wiedze na temat
+          technologi webowych. Poza kodowaniem, interesuję się filozofią,
+          rozwojem osobistym i kulturą dalekiego wschodu. Lubię słuchać
+          muzyki elektronicznej, czytać ksiązki z gatunku fantasy oraz <abbr title="Science fiction">SF</abbr> i
+          obejrzeć
+          dobry
+          film lub serial.
         </p>
-      </div>
-    </header>
+      </article>
+    </section>
 
-    <main class="p-3 p-md-4 p-lg-5">
-      <section id="about-me">
-        <h2 class="text-center my-3 fs-2 text-uppercase">Kim jestem?</h2>
-        <article class="container d-xl-flex">
-          <div
-            class="d-flex flex-column justify-content-center align-items-center"
-          >
-            <img
-              class="my-image img-fluid"
-              src="../images/myphoto.jpg"
-              alt="Zamyślony ja, sam stojący w ogrodzie i patrzący w dal"
-            />
-            <div class="d-flex justify-content-center">
-              <a href="https://www.github.com/" target="_blank"
-                ><i class="icon icon-github"></i
-              ></a>
-              <a href="https://www.facebook.com/" target="_blank"
-                ><i class="icon icon-facebook"></i
-              ></a>
-            </div>
-          </div>
-          <p style="text-align: justify" class="ps-xl-5 text-md-start">
-            Witam, mam na imię Mateusz jestem z zawodu technikiem
-            teleinformatykiem, który 7 miesięcy temu rozpoczą swoją przygode z
-            programowaniem. Dokładniej to ucze się tworzyć strony internetowe za
-            pomocą takich techonlogi jak HTML, CSS oraz JavaScript. Jestem
-            samoukiem. Całą wiedze zdobywam za pomoca darmowych kursów z
-            internetu oraz książek. Pragnę w przyszłości pracować jako Frontend
-            developerem. Póki co jeszcze długa droga przede mną, ale się nie
-            zniechęcam i systematycznie powiększam swoją wiedze na teamt
-            technologi webowych. Poza kodowaniem, interesuje się filozofią,
-            rozwojem osobistym i kulturą dalekiego wschodu. Lubie słuchac
-            muzyki, czytać ksiązki z gatunku fantasy oraz s-f i obejrzeć dobry
-            serial lub film.
-          </p>
-        </article>
-      </section>
-
-      <section id="passion">
-        <h2 class="text-center my-3 fs-2 text-uppercase" my-3 text-uppercase>
-          Moja pasja
-        </h2>
-        <article class="container">
-          <div
-            class="d-flex flex-column flex-xxl-row w-100 justify-content-center align-items-center"
-          >
-            <p style="text-align: justify" class="text-md-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quas,
-              reprehenderit inventore dolores veniam officiis eligendi possimus
-              saepe autem magni suscipit quo animi atque eius magnam cum neque
-              perferendis qui odit modi. Doloremque sapiente eos odit quis
-              laudantium amet corrupti sed similique soluta commodi quas, quia
-              illum tempora libero, reiciendis pariatur vitae nesciunt illo?
-              Necessitatibus maxime provident assumenda eos facere molestiae.
-              Debitis recusandae esse, voluptate excepturi est velit, quos
-              laborum molestiae enim suscipit aperiam, fugiat vitae corrupti!
-              Itaque accusantium, officiis maiores cum ut possimus porro tempora
-              incidunt labore sapiente, minus enim
-            </p>
-            <img
-              class="img-fluid passion-img my-image"
-              src="../images/laptop.jpg"
-              alt="Włączony czarny laptop. Na ekranie słabo widoczny kod HTML"
-            />
-          </div>
-          <h3 class="text-center fs-4 mt-4">Dlaczego Frontend?</h3>
+    <section id="passion">
+      <h2 class="text-center mt-4 mb-2 fs-2 text-uppercase">
+        Moja pasja
+      </h2>
+      <article class="container">
+        <div class="d-flex flex-column flex-xxl-row w-100 justify-content-center align-items-center">
           <p style="text-align: justify" class="text-md-start">
-            Od bardzo dawna zawsze ciekawiły mnie zagadnienia szeroko pojętej
-            informatyki oraz dziedzin z nią związanych. Z tych właśnie powodów
-            postanowiłem rozpocząć edukacje w tecnikum na kierunku
+            Od bardzo dawna ciekawiły mnie zagadnienia szeroko pojętej
+            informatyki oraz dziedziny z nią związane. Z tych właśnie powodów
+            postanowiłem rozpocząć edukacje w technikum na kierunku
             teleinformatyka. Choć pomimo posiadania tytułu technika i nie
-            pracowaniu w tym zawodzie uważam że nie był to zmarnowany czas.
-            Sporo nauczyłem się o sieciach informtycznych, które przez większość
-            ludzi jest nazywane po prostu internetem. Jednak pomimo satysfkacji
-            ze zdowbywanej więcy czułem jednak że to nie jst to. Ze jedank
-            tleinfotmatyka nie będzie moją przyszłościa. Więc zaczełem szukać
-            czegość nowego, tego czegoś co znowu rozpali we mnie to pragnieni
-            uczenia się i poznawania nowycj rzeczy. Tym czymś włąsnie było
-            programowanie stron internetowych czy wspomniany wcześniej
-            front-end. Pierwszy raz z programowaniem miałem stycznośc w
-            technikum na lekcji informatyki. Uczyliśmy się podstaw programowania
-            w języku Python. Pamiętam, że pomimo faktu że ten język jest jednym
-            z najłatwiejszych (czego oczywiście wtedy nei wiedziałem) to bylo mi
-            bardzo ciężko zrozumieć jak pisze się programy Przed tem sam nie
-            próbowałem swoich sił w tej dziedzinie. Uważałem że to nie dla mnie,
-            że to za trudne Z wielu różnuch ścieżek które można wybrać w
-            programowaniu postanowiłem wybrać FrontEnd z kilku powodów. Uznalem
-            że sam do neigo najbardziej pasuje. Po pierwsze moim zdaniem jest to
-            ścieżka w kórej najbardziej można wykazać się kreatywnością oraz
-            twórczością. O przepraszam gdzieś mi się zapodziała reszta tekstu.
-            Dajcie mi chwile musze jej poszukać... Dobra znalazlem jest w
-            folderze "Projekt", już szybciutko otwieram aby nie tracić Twojego
-            cennego czasu :).
+            pracowaniu w tym zawodzie uważam, że nie był to zmarnowany czas.
+            Sporo nauczyłem się o sieciach teleinformtycznych oraz o protokołach internetowych. Jednak pomimo
+            satysfakacji
+            ze zdowbywanej wiedzy, czułem jednak, że to nie jest to. Czułem, że
+            teleinformatyka nie będzie związana z moją przyszłością. Więc zacząłem szukać
+            czegość nowego, tego czegoś co znowu rozpali we mnie to pragnienie
+            uczenia się i poznawania nowych rzeczy. Tym czymś właśnie było
+            programowanie stron internetowych czyli wspomniany wcześniej
+            Front end.
           </p>
-          <div class="container cmd">
-            <div class="cmd-icon"><i class="icon-code"></i></div>
-            <div class="minimalize"><i class="icon-minimize"></i></div>
-            <div class="maximalize"><i class="icon-window"></i></div>
-            <div class="close d-flex align-items-center justify-content-center">
-              <i class="icon-close"></i>
-            </div>
-            <p class="p-lg-3 p-2">
-              C:\Users\mateusz>cd Projekt<br />
-              C:\Users\mateusz\Projekt>type text.txt<br />
-              Po drugie Stylizowanie strony daje mi mnówstwo radości i
-              satysfakcji. Podoba mi się bardzo fakt, że po wpisaniu jednej
-              linijki kodu praktycznie od razu widze efekt na stronie, którą w
-              danym momencie tworze. Uwielbiam planować strukture strony, jej
-              wygląd i animcje które się na niej się pojawią. Bardzo mnie to
-              eksytuje oraz pobudza moje kreatywne myślenie. Oczywiście nie
-              zawsze bywa tak kolorowo, ponieważ pojawiają się czasami schody w
-              postacie różych bugów, błędów i innych nieprzewidzianych
-              problemów. Jak sobie z radze z takimi chwilami napisałem poniżej.
-              <br />C:\Users\mateusz><span class="prompt">|</span>
-            </p>
+          <img class="img-fluid passion-img my-image m-3" src="../images/laptop.jpg"
+            alt="Włączony czarny laptop. Na ekranie słabo widoczny kod HTML" />
+        </div>
+        <h3 class="text-center fs-4 mt-4">Dlaczego Front end?</h3>
+        <p style="text-align: justify" class="text-md-start">
+          Pierwszy raz z programowaniem, miałem styczność w
+          technikum na lekcji informatyki. Uczyliśmy się podstaw programowania
+          w języku Python. Pamiętam, że pomimo faktu że ten język jest jednym
+          z najłatwiejszych (czego oczywiście wtedy nie wiedziałem), to było mi
+          bardzo ciężko zrozumieć jak piszę się w nim programy. Przedtem sam nie
+          próbowałem swoich sił w tej dziedzinie. Uważałem, że to nie dla mnie,
+          że to jest poprostu za trudne. Z wielu różnych ścieżek, które można wybrać w
+          programowaniu postanowiłem ełaśnie wybrać Front end z kilku powodów. Po pierwsze uznałem,
+          że sam do niego najbardziej pasuje. Moim zdaniem jest to
+          ścieżka, w której najbardziej można wykazać się kreatywnością oraz
+          twórczością. O przepraszam gdzieś mi się zapodziała reszta tekstu.
+          Dajcie mi chwilkę musze jej poszukać... Dobra znalazlem jest w
+          folderze "Projekt", już szybciutko otwieram aby nie tracić Twojego
+          cennego czasu :).
+        </p>
+        <div class="container cmd">
+          <div class="cmd-icon"><i class="icon-code"></i></div>
+          <div class="minimalize"><i class="icon-minimize"></i></div>
+          <div class="maximalize"><i class="icon-window"></i></div>
+          <div class="close d-flex align-items-center justify-content-center">
+            <i class="icon-close"></i>
           </div>
-          <h3 class="text-center fs-4 mt-4">Moje motywacje</h3>
-          <p style="text-align: justify" class="text-md-start">
-            Czasami z nauką programowanie bywa cięzko. Pojawiają się błędy w
-            projekcie, których nie daje rady rozwiązać. Wtedy często trace
-            motywacje i chęci nad dalszym tworzeniem. Są się dni w których mi
-            się po ptrsotu nie chce. Nie pomga też fakt, że nie mam w znajoych
-            osoby, która pomogła by mi w nauce. Ale nie poddaje się. Znalazłem w
-            internecie kilka sposobów jak sobie radzić z tą demotywacją. Jednym
-            z takich sposobów jest przypominanie o sobie samym przed jakiegoś
-            okresu czasu Często sięgam pamięcią aby przypmnieć siebie samego
-            przed kilku miesięcy. Wtedy daje sobie sprawe ile juz rzeczy się
-            nauczyłem. Uświadaiam sobie jak bardzo się rowinełem i ide do
-            przodu. Kolejnym jest układanie planu w nauce. Ustalam sobie czego
-            będe się teraz uczył, jakie projekty zrealizuje i w jaki sposób będe
-            je realizował. Rozpisuje sobie po koleji co musze w projekcie
-            najpierw zrobić, co będzie w nim największym wyzwaniem, jakie
-            problemy mogą się pojawić i jakie testy będe musiał przeprowadzić.
-            Ostanim sposobem, który bardzo mi pomaga jest wypracowywanei w sobie
-            nawyku uczenia się. To według mnie najlepszy spsób z tych trzech.
-            Gdy mamy już w spobie wypracowny nawyk to podjęcie działa, które
-            jest u nas nawykiem, wymaga praktycznie zero wysiłku. Nie musimy się
-            motywować aby zacząć prace my poprsotu to robimy, ponieważ jsteśmy
-            już do tego przyzwyczaieni. Oczywiście zbudowanie takiej rutyny jest
-            bardzo cięzkie i długotrwałe. Osobiście caly czas staram się
-            utrzymywać te nawyki oraz trenować własną samidyscypline gdzięki,
-            którym kiedyś osiągne swój wymarzony cel. Bardzo podoba mi się cytat
-            Stephena Covey-a, mówiący o tym jak ważne są nawyki w doążeniu do
-            celów w naszy życiu.
+          <p class="p-lg-3 p-2">
+            <span aria-hidden="true">C:\Users\mateusz>cd Projekt</span><br />
+            <span aria-hidden="true">C:\Users\mateusz\Projekt>type text.txt</span><br />
+            Po drugie, stylizowanie strony daje mi mnóstwo radości i
+            satysfakcji. Podoba mi się bardzo fakt, że po wpisaniu jednej
+            linijki kodu praktycznie od razu widzę efekty na stronie, którą w
+            danym momencie tworzę. Uwielbiam planować strukture strony, jej przyszły
+            wygląd i animacje, które się na niej pojawią. Bardzo mnie to
+            ekscytuje oraz pobudza moje kreatywne i strategiczne myślenie. Oczywiście nie
+            zawsze bywa tak kolorowo. Pojawiają się czasami schody w
+            postaci różnych bugów, błędów i innych nieprzewidzianych
+            problemów. Jak sobie radzę z takimi chwilami? Odpoweidź na to pytanie napisałem poniżej.
+            <span aria-hidden="true"><br />C:\Users\mateusz><span class="prompt">|</span></span>
           </p>
-          <blockquote class="text-center pb-4">
-            <b
-              >"Motywacja jest tym co pozwala Ci zacząć. Nawyk jest tym co
-              pozwala Ci wytrwać!" Stephen Covey</b
-            >
-          </blockquote>
-        </article>
-      </section>
+        </div>
+        <h3 class="text-center fs-4 mt-4">Moje motywacje</h3>
+        <p style="text-align: justify" class="text-md-start">
+          Z nauką programowania bywa ciężko. Pojawiają się błędy w
+          projekcie, których czasami nie daje rady rozwiązać. Wtedy często tracę
+          motywacje i chęci nad dalszym tworzeniem. Są też dni, w których kontrole przejmuje prokrastynacja. Nie pomaga
+          też fakt, że nie mam w znajomych
+          osoby, która pomogła by mi w nauce. Ale nie poddaje się. Znalazłem w
+          internecie kilka sposobów jak sobie radzić z tą demotywacją. Jednym
+          z takich sposobów, jest przypominanie o sobie samym sprzed jakiegoś
+          okresu czasu. Zacząłem często sięgać pamięcią aby przypomnieć siebie samego
+          przed kilku miesięcy. Wtedy zdaje sobie sprawe ile już rzeczy się
+          nauczyłem. Uświadamiam sobie jak bardzo się rozwinełem i że ciągle ide do
+          przodu. Kolejnym sposobem jest układanie planu w nauce. Ustalam sobie czego
+          będę się na dany moment uczył, jakie projekty zrealizuje i w jaki sposób będę
+          je realizował. Rozpisuje sobie po koleji co musze w projekcie
+          najpierw zrobić, co będzie w nim największym wyzwaniem, jakie
+          problemy mogą się po drodze pojawić i jakie testy będe musiał przeprowadzić.
+          Ostanim sposobem, który bardzo mi pomaga jest wypracowywanie w sobie
+          nawyku uczenia się. To według mnie najlepszy sposób z tych trzech.
+          Gdy mamy już wypracowny nawyk, to podjęcie działa, które
+          jest u nas nawykiem, wymaga praktycznie zero wysiłku. Nie musimy się
+          motywować aby zacząć prace my poprostu to robimy, ponieważ jsteśmy
+          już do tego przyzwyczaieni. Oczywiście zbudowanie takiej rutyny jest
+          bardzo cięzkie i długotrwałe. Osobiście cały czas staram się
+          budować te nawyki oraz trenować własną samodyscypline dzięki,
+          której kiedyś osiągne swój wymarzony cel. Bardzo podoba mi się cytat
+          Stephena Covey-a, mówiący o tym jak ważne są nawyki w dążeniu do
+          celów w naszy życiu.
+        </p>
+        <blockquote class="text-center pb-4">
+          <b>"Motywacja jest tym co pozwala Ci zacząć. Nawyk jest tym co
+            pozwala Ci wytrwać!" ~ Stephen Covey</b>
+        </blockquote>
+      </article>
+    </section>
 
-      <section id="skills">
-        <h2 class="text-center my-3 fs-2 text-uppercase">Umiejętności</h2>
-        <article class="container">
-          <p style="text-align: justify" class="text-md-start">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quas,
-            reprehenderit inventore dolores veniam officiis eligendi possimus
-            saepe autem magni suscipit quo animi atque eius magnam cum neque
-            perferendis qui odit modi. Doloremque sapiente eos odit quis
-            laudantium amet corrupti sed similique soluta commodi quas, quia
-            illum tempora libero, reiciendis pariatur vitae nesciunt illo?
-            Necessitatibus maxime provident assumenda eos facere molestiae.
-            Debitis recusandae esse, voluptate excepturi est velit, quos laborum
-            molestiae enim suscipit aperiam, fugiat vitae corrupti! Itaque
-            accusantium, officiis maiores cum ut possimus porro tempora incidunt
-            labore sa
-          </p>
-        </article class="container">
-        <h3 class="text-center fs-4">Co już potrafie?</h3>
-        <article class="container">
-          <p style="text-align: justify" class="text-md-start">
-            Potrafie sprawnie nadawać style elementom na stronei za pomocą CSS
-            Umiem rówież za jego pomoca pozycjonować elementy względem siebie
-            używając siatki grid oraz flex. Niekiedy zdarza mi się stworzyć prsotą
-            animacje w CSS za pomocą keyframes. Znam preprocesory takie jak np
-            Sass, którego do tej pory najwięcej poznałem i używałem. Bez problemu
-            tworze strukture sematynczą w HTML-u. Wiem troche o dostępności
-            strony, o atrybutach aria i o testowaniu strony pod tym kątem Również
-            nie mam prgblemów z napisaniem dosyć prostych scryptów w języku
-            JavaScript i manipulowaniem za jago pomocą modelem DOM dokumentu. Z
-            narzędzi programistyczych znam troche git-a, ale to jak na razie same
-            jego podstawy Zdaje sobie sprawe to dość nie wiele ale jak niektórzy
-            mawiają "Nie od razu Kraków zbudowano" nie poddaje się i
-            systematycznie poznaje coraz to nowe rzeczy.
-          </p>
-        </article>
-        <h4 class="text-center fs-5">
-          Wykresy przedstawiające poziom opanowania tych technologii:
-        </h4>
-        <div
-          class="d-flex flex-wrap gap-4 gap-lg-5 justify-content-center align-items-center"
-        >
-          <div
-            class="p-3 border border-4 rounded-4 d-flex tech align-items-center"
-          >
-            <img
-              class="img-tech img-fluid"
-              src="../images/html5.svg"
-              alt="Logo języka znacznikowego HTML w wersji piątej"
-            />
-            <div
-              class="w-50 ms-auto me-auto d-flex flex-column justify-content-center align-items-center"
-            >
+    <section id="skills">
+      <h2 class="text-center my-3 fs-2 text-uppercase">Umiejętności</h2>
+      <article class="container">
+        <p style="text-align: justify" class="text-md-start">
+          Przez te sześć miesięcy uważam, że dosyć sporo się nauczyłem. Zrobiłem kilka prostych stron,
+          dzięki którym zdobyłem troche doświadczenia. W tej części chciałbym przedstawić Ci co już umiem
+          zrobić oraz jakich technologi/narzędzi się teraz uczę.
+        </p>
+      </article>
+      <h3 class="text-center fs-4">Co już potrafie?</h3>
+      <article class="container">
+        <p style="text-align: justify" class="text-md-start">
+          Potrafie sprawnie nadawać style elementom na stronie za pomocą CSS-a.
+          Umiem rówież za jego pomocą pozycjonować elementy względem siebie.
+          używając siatki grid oraz flex. Niekiedy zdarza mi się stworzyć prostą
+          animacje w CSS za pomocą keyframes. Znam preprocesory takie jak np
+          Sass, którego do tej pory najwięcej używałem. Bez problemu
+          tworze strukture sematynczą w HTML-u. Wiem troche o dostępności
+          strony, o atrybutach aria i o testowaniu strony pod tym kątem. Również
+          nie mam problemów z napisaniem dosyć prostych scryptów w języku
+          JavaScript i manipulowaniem za jago pomocą modelem DOM dokumentu. Z
+          narzędzi programistyczych znam troche Gita, ale to jak na razie same
+          jego podstawy. Zdaje sobie sprawe, że to dość nie wiele, ale jak niektórzy
+          mawiają <q>
+            <italic>"Nie od razu Kraków zbudowano"</italic>
+          </q> nie poddaje się i
+          systematycznie poznaje coraz to nowe rzeczy.
+        </p>
+      </article>
+      <figure>
+        <figcaption class="text-center fs-5 mb-3">
+          Grafiki przedstawiające poziom opanowania tych technologii:
+        </figcaption>
+        <div class="d-flex flex-wrap gap-4 gap-lg-5 justify-content-center align-items-center">
+          <div class="p-3 border border-4 rounded-4 d-flex tech align-items-center">
+            <img class="img-tech img-fluid" src="../images/html5.svg"
+              alt="Logo języka znacznikowego HTML w wersji piątej" />
+            <div class="w-50 ms-auto me-auto d-flex flex-column justify-content-center align-items-center">
               <label for="html5-progress">HTML 5</label>
               <div class="progress w-100 mt-3">
-                <div
-                  name="html5-progress"
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  style="width: 85%"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+                <div name="html5-progress" class="progress-bar bg-success" role="progressbar" style="width: 85%"
+                  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
-          <div
-            class="p-3 border border-4 rounded-4 d-flex tech align-items-center"
-          >
-            <img
-              class="img-tech img-fluid"
-              src="../images/css.png"
-              alt="Logo kaskadowego arkusza stylów CSS"
-            />
-            <div
-              class="w-50 ms-auto me-auto d-flex flex-column justify-content-center align-items-center"
-            >
+          <div class="p-3 border border-4 rounded-4 d-flex tech align-items-center">
+            <img class="img-tech img-fluid" src="../images/css.png" alt="Logo kaskadowego arkusza stylów CSS" />
+            <div class="w-50 ms-auto me-auto d-flex flex-column justify-content-center align-items-center">
               <label for="css-progress">CSS</label>
               <div class="progress w-100 mt-3">
-                <div
-                  name="css-progress"
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  style="width: 75%"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+                <div name="css-progress" class="progress-bar bg-success" role="progressbar" style="width: 75%"
+                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
-          <div
-            class="p-3 border border-4 rounded-4 d-flex tech align-items-center"
-          >
-            <img
-              class="img-tech img-fluid"
-              src="../images/javascript.svg"
-              alt="Logo języka programowania o nazwie JavaScript"
-            />
-            <div
-              class="w-50 ms-auto me-auto d-flex flex-column justify-content-center align-items-center"
-            >
+          <div class="p-3 border border-4 rounded-4 d-flex tech align-items-center">
+            <img class="img-tech img-fluid" src="../images/javascript.svg"
+              alt="Logo języka programowania o nazwie JavaScript" />
+            <div class="w-50 ms-auto me-auto d-flex flex-column justify-content-center align-items-center">
               <label for="javascript-progress">JavaScript</label>
               <div class="progress w-100 mt-3">
-                <div
-                  name="javascript-progress"
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  style="width: 45%"
-                  aria-valuenow="45"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+                <div name="javascript-progress" class="progress-bar bg-success" role="progressbar" style="width: 45%"
+                  aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
-          <div
-            class="p-3 border border-4 rounded-4 d-flex tech align-items-center"
-          >
-            <img
-              class="img-tech img-fluid"
-              src="../images/sass.png"
-              alt="Logo preprocesora Sass"
-            />
-            <div
-              class="w-50 ms-auto me-auto d-flex flex-column justify-content-center align-items-center"
-            >
+          <div class="p-3 border border-4 rounded-4 d-flex tech align-items-center">
+            <img class="img-tech img-fluid" src="../images/sass.png" alt="Logo preprocesora Sass" />
+            <div class="w-50 ms-auto me-auto d-flex flex-column justify-content-center align-items-center">
               <label for="sass-progress">Sass</label>
               <div class="progress w-100 mt-3">
-                <div
-                  name="sass-progress"
-                  class="progress-bar bg-success"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+                <div name="sass-progress" class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
         </div>
+      </figure>
 
-        <h3 class="text-center mb-5 mt-4">Czego się obecnie ucze?</h3>
-        <article class="container">
-          <p style="text-align: justify" class="text-md-start">
-            Nie dawno zaczełem poznawać Bootstrap-a i właśnie tej techologii
-            obecnie się ucze. Bootstrap jest frameworkiem css, dzięki którym
-            tworzenei stron jest o wiele szybsze, łatwiejsze i przyjemniesze. Jest
-            w nim dużo gotowych do użucia komponentów oraz klas, których można
-            dowolnie używać do własnych potrzeb. Jako ciekawoste moge dodać, że
-            strona na, której obecnie jesteś została zrobiona właśnie przy użyciu
-            owego frameworka. Poza tym dużo uwagi skupiam również na GIT-cie. GIT
-            to (jeśli ktoś nie wie) jest rozproszony systemen do kontroli wersji.
-            Jest to bardzo popularne narzędzie i jest powszechnie używane przez
-            programistów pracującyh na danym projektem. Z tych właśnie powodów
-            nauka GIT-a jest moim piorytetem. Oczywiście nadalcały czas powiększam
-            swoją wiedze na temat HTML, CSS i JavaScript-u dzięki nowycm projektom
-            jak na przykład ta strona.
-          </p> 
-        </article>
+      <h3 class="text-center mb-5 mt-4">Czego się obecnie ucze?</h3>
+      <article class="container">
+        <p style="text-align: justify" class="text-md-start">
+          Nie tak dawno zacząłem poznawać Bootstrap-a i właśnie tej techologii
+          obecnie się uczę. Bootstrap jest frameworkiem CSS, dzięki którym
+          tworzenie stron jest o wiele szybsze, łatwiejsze i przyjemniesze. Jest
+          w nim dużo gotowych do użucia komponentów oraz klas, których można
+          dowolnie używać do własnych potrzeb. Jako ciekawoskte moge dodać, że
+          strona na, której obecnie się znajdujesz została zrobiona właśnie przy użyciu
+          owego frameworka. Poza tym dużo uwagi skupiam również na Gitcie. Git
+          to (jeśli ktoś nie wie) rozproszony systemen do kontroli wersji.
+          Jest to bardzo popularne narzędzie i jest powszechnie używane przez
+          programistów pracującyh w zespołach nad danym projektem. Z tych właśnie powodów
+          nauka Gita jest moim piorytetem. Oczywiście nadal cały czas powiększam
+          swoją wiedze na temat HTML, CSS i JavaScript-u dzięki nowycm projektom
+          jak na przykład ta strona.
+        </p>
+      </article>
 
-        <div
-          class="d-flex flex-wrap gap-5 justify-content-center align-items-center"
-        >
-          <div>
-            <img
-              class="img-tech img-fluid"
-              src="../images/bootstrap.png"
-              alt="Logo frameworka o nazwie Bootstrap"
-            />
-          </div>
-          <div>
-            <img
-              class="img-tech img-fluid"
-              src="../images/git.png"
-              alt="Logo rozproszonego systemu kontroli wersji o nazwie GIT"
-            />
-          </div>
+      <div class="d-flex flex-wrap gap-5 justify-content-center align-items-center">
+        <div>
+          <img class="img-tech img-fluid" src="../images/bootstrap.png" alt="Logo frameworka o nazwie Bootstrap" />
+          <p class="text-center my-1">Bootstrap</p>
         </div>
-      </section>
-
-      <section id="contact">
-        <h2 class="text-center fs-2 mt-5 text-uppercase">Kontakt</h2>
-
-        <article class="container">
-          <p style="text-align: justify" class="text-center">
-            Jeśli dotrwałeś/aś do tego momentu to bardzo Tobie dziękuje za czas
-            poświęcony poznaniu mojej historii. Gdybyś miał/ła do mnie jakieś
-            uwagi, pytania lub chcesz podjąć ze mną współrace nad projektem to
-            śmiało wyślij do mnie wiadomość. Możesz łatwo to zrobić formularzem
-            poniżej.
-          </p>
-        </article>
-
-        <form
-          class="d-flex flex-column gap-3 justify-content-center align-items-center"
-          action="https://formsubmit.io/send/531ac240-27c8-4f73-ab4d-bfa175550d72"
-          method="POST"
-        >
-          <fieldset>
-            <input
-              name="_redirect"
-              type="hidden"
-              id="name"
-              value="https://kaipi01.github.io/public/pages/thanks.html"
-            />
-
-            <label class="mt-1 p-2 fs-5" for="emial">Twój e-mail</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder=" Wpisz swój adres..."
-              requried
-            />
-
-            <label class="mt-1 p-2 fs-5" for="emial">Twoja wiadomość</label>
-            <textarea
-              name="textarea"
-              id="textarea"
-              cols="30"
-              rows="10"
-              placeholder=" Wpisz wiadomość..."
-            ></textarea>
-            <input name="_formsubmit_id" type="text" style="display: none" />
-          </fieldset>
-
-          <button class="button submit-btn my-3" type="submit">Wyślij</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="d-flex flex-column align-items-center">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <span class="navbar-logo me-1">M<span>F</span></span>
-      </a>
-      <div class="d-flex justify-content-center gap-3">
-        <a href="https://www.instagram.com/mateusz_filipiak01/" target="_blank"
-          ><i class="icon icon-instagram"></i
-        ></a>
-        <a href="https://www.facebook.com/mateusz.filipiak.9216" target="_blank"
-          ><i class="icon icon-facebook"></i
-        ></a>
-        <a href="https://twitter.com/ZimnaRybka" target="_blank"
-          ><i class="icon icon-twitter"></i
-        ></a>
-        <a href="https://github.com/Kaipi01" target="_blank"
-          ><i class="icon icon-github"></i
-        ></a>
+        <div>
+          <img class="img-tech img-fluid" src="../images/git.png"
+            alt="Logo rozproszonego systemu kontroli wersji o nazwie GIT" />
+          <p class="text-center my-1">Git</p>
+        </div>
       </div>
-      <p class="text-center p-3">
-        Copyright &copy; Mateusz Filipiak 2022. All rights reserved
-      </p>
-    </footer>
+    </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../src/bootstrap-5.2.0/js/bootstrap.min.js"></script>
-  </body>
+    <section id="contact">
+      <h2 class="text-center fs-2 mt-5 text-uppercase">Kontakt</h2>
+
+      <article class="container">
+        <p style="text-align: justify" class="text-center">
+          Jeśli dotrwałeś/aś do tego momentu to bardzo Tobie dziękuje za czas
+          poświęcony poznaniu mojej historii. Gdybyś miał/ła do mnie jakieś
+          uwagi, pytania lub chcesz podjąć ze mną współrace nad projektem to
+          śmiało wyślij do mnie wiadomość. Możesz łatwo to zrobić za pomocą formularza
+          poniżej.
+        </p>
+      </article>
+
+      <form class="d-flex flex-column gap-3 justify-content-center align-items-center"
+        action="https://formsubmit.io/send/531ac240-27c8-4f73-ab4d-bfa175550d72" method="POST">
+        <fieldset>
+          <input name="_redirect" type="hidden" id="name" value="https://kaipi01.github.io/public/pages/thanks.html" />
+
+          <label class="mt-1 p-2 fs-5" for="emial">Twój e-mail</label>
+          <input type="email" name="email" id="email" placeholder=" Wpisz swój adres..." requried />
+
+          <label class="mt-1 p-2 fs-5" for="emial">Twoja wiadomość</label>
+          <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder=" Wpisz wiadomość..."></textarea>
+          <input name="_formsubmit_id" type="text" style="display: none" />
+        </fieldset>
+
+        <button class="button submit-btn my-3" type="submit">Wyślij</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="d-flex flex-column align-items-center">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <span class="navbar-logo me-1">M<span>F</span></span>
+    </a>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="https://www.instagram.com/mateusz_filipiak01/" target="_blank"><i class="icon icon-instagram"></i></a>
+      <a href="https://www.facebook.com/mateusz.filipiak.9216" target="_blank"><i class="icon icon-facebook"></i></a>
+      <a href="https://twitter.com/ZimnaRybka" target="_blank"><i class="icon icon-twitter"></i></a>
+      <a href="https://github.com/Kaipi01" target="_blank"><i class="icon icon-github"></i></a>
+    </div>
+    <p class="text-center p-3">
+      Copyright &copy; Mateusz Filipiak 2022. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="../src/bootstrap-5.2.0/js/bootstrap.min.js"></script>
+</body>
+
 </html>
