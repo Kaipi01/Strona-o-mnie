@@ -1,3 +1,3 @@
 # Strona-o-mnie
 
-https://kaipi01.github.io/public/
+https://kaipi01.github.io/Strona-O-Mnie/public/
